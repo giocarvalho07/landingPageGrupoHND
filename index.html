@@ -24,6 +24,7 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script defer src="assets/js/traducao.js"></script>
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -37,20 +38,24 @@
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center">
             <h1 class="logo me-auto"><a href="index.html">HND<span>.</span></a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="textoIng()">
                             <img src="https://img.icons8.com/color/50/000000/usa.png" />
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="textoEsp()">
                             <img src="https://img.icons8.com/color/50/000000/spain-2.png" />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" onclick="textoBr()">
+                            <img src="https://img.icons8.com/color/48/000000/brazil.png" />
                         </a>
                     </li>
                 </ul>
@@ -58,7 +63,7 @@
             </nav>
             <!-- .navbar -->
 
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=5511947928858&text=Seja%20muito%20bem%20vindo%20ao%20time%20HND." class="get-started-btn scrollto">Conheça</a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5511947928858&text=Seja%20muito%20bem%20vindo%20ao%20time%20HND." class="get-started-btn scrollto" id="txt0">Conheça</a>
         </div>
     </header>
     <!-- End Header -->
@@ -70,10 +75,10 @@
             <div class="row no-gutters">
                 <div class="content col-xl-6 d-flex align-items-stretch">
                     <div class="mt-5">
-                        <h3 class="mt-5"> O plano de negócios da HND.</h3>
-                        <h4>Mudou a vida de milhares de empreendedores e vai mudar a sua também.</h4>
+                        <h3 class="mt-5" id="txt1"> O plano de negócios da HND.</h3>
+                        <h4 id="txt2">Mudou a vida de milhares de empreendedores e vai mudar a sua também.</h4>
                         <a target="_blank" href="https://api.whatsapp.com/send?phone=5511947928858&text=Seja%20muito%20bem%20vindo%20ao%20time%20HND." class="about-btn bg-danger">
-                            <span> Conheça </span>
+                            <span id="txt3"> Conheça </span>
                             <i class="bx bx-chevron-right"></i>
                         </a>
                     </div>
@@ -96,8 +101,8 @@
             <div class="row">
 
                 <div class="section-title">
-                    <h2>Quero fazer parte agora mesmo</h2>
-                    <a target="_blank" href="https://vo10.hinode.com.br/cadastro/45820360" class="get-started-btn scrollto">Seja o protagonista da sua história <i class="bx bx-chevron-right"></i></a>
+                    <h2 id="txt4">Quero fazer parte agora mesmo</h2>
+                    <a target="_blank" href="https://vo10.hinode.com.br/cadastro/45820360" class="get-started-btn scrollto" id="txt5">Seja o protagonista da sua história <i class="bx bx-chevron-right"></i></a>
 
                 </div>
 
@@ -114,7 +119,7 @@
                 <div class="row">
 
                     <div class="section-title">
-                        <h2> Nossos produtos são vendidos em +10 de países</h2>
+                        <h2 id="txt6"> Nossos produtos são vendidos em +10 de países</h2>
 
                     </div>
 
@@ -147,11 +152,11 @@
                 <div class="row no-gutters">
                     <div class="content col-xl-6 d-flex align-items-stretch">
                         <div class="content">
-                            <h3> O mundo mudou e a internet revolucionou o jeito de empreender.</h3>
-                            <p>
+                            <h3 id="txt7"> O mundo mudou e a internet revolucionou o jeito de empreender.</h3>
+                            <p id="txt8">
                                 Um modelo de negócio testado, aprovado e executado todos os dias por milhares de empreendedores.
                             </p>
-                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5511947928858&text=Seja%20muito%20bem%20vindo%20ao%20time%20HND." class="about-btn"><span> Conheça </span> <i class="bx bx-chevron-right"></i></a>
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5511947928858&text=Seja%20muito%20bem%20vindo%20ao%20time%20HND." class="about-btn"><span id="txt9"> Conheça </span> <i class="bx bx-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="col-xl-6 d-flex align-items-stretch">
@@ -183,7 +188,7 @@
                         <div class="count-box">
                             <i class="bi bi-emoji-smile"></i>
                             <span data-purecounter-start="0" data-purecounter-end="300000" data-purecounter-duration="1" class="purecounter"> </span>
-                            <p>empreendedores ativos</p>
+                            <p id="txt10">empreendedores ativos</p>
                         </div>
                     </div>
 
@@ -191,7 +196,7 @@
                         <div class="count-box">
                             <i class="bi bi-cash-coin"></i>
                             <span data-purecounter-start="0" data-purecounter-end="30000" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>vivem do projeto HND</p>
+                            <p id="txt11">vivem do projeto HND</p>
                         </div>
                     </div>
 
@@ -199,7 +204,7 @@
                         <div class="count-box">
                             <i class="bi bi-handbag"></i>
                             <span data-purecounter-start="0" data-purecounter-end="600" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>produtos em seu portifólio</p>
+                            <p id="txt12">produtos em seu portifólio</p>
                         </div>
                     </div>
 
@@ -207,7 +212,7 @@
                         <div class="count-box">
                             <i class="bi bi-globe"></i>
                             <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>expansão de países até 2030</p>
+                            <p id="txt13">expansão de países até 2030</p>
                         </div>
                     </div>
 
@@ -221,10 +226,10 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>O negócio</h2>
+                    <h2 id="txt14">O negócio</h2>
                     <br>
-                    <h4> Seja bem vindo ao grupo HND, sua jornada começa aqui.</h4>
-                    <h5>
+                    <h4 id="txt15"> Seja bem vindo ao grupo HND, sua jornada começa aqui.</h4>
+                    <h5 id="txt16">
                         Anote o dia de hoje em seu calendário pois lá na frente você se lembrará do dia em que decidiu se permitir a viver o seu propósito!
                     </h5>
 
@@ -240,24 +245,24 @@
                                 <div class="col-md-6">
                                     <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                                         <i class="bi bi-briefcase"></i>
-                                        <h4><a href="#"> Trabalhe de onde e como quiser</a></h4>
-                                        <p> Esqueça a regra da antiga CLT, você será o dono do seu negócio.</p>
+                                        <h4><a href="#" id="txt17"> Trabalhe de onde e como quiser</a></h4>
+                                        <p id="txt18"> Esqueça a regra da antiga CLT, você será o dono do seu negócio.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mt-4 mt-md-0">
                                     <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                                         <i class="bi bi-diagram-3"></i>
-                                        <h4><a href="#"> Trabalho em equipe</a></h4>
-                                        <p> Gerencie sua rede de forma eficiente onde todos consigam prosperar.</p>
+                                        <h4><a href="#" id="txt19"> Trabalho em equipe</a></h4>
+                                        <p id="txt20"> Gerencie sua rede de forma eficiente onde todos consigam prosperar.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mt-4 mt-md-0">
                                     <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                                         <i class="bi bi-bar-chart"></i>
                                         <h4>
-                                            <a href="#"> Reconhecimento exponencial</a>
+                                            <a href="#" id="txt21"> Reconhecimento exponencial</a>
                                         </h4>
-                                        <p>
+                                        <p id="txt22">
                                             Após completar suas metas você é recompensado imediatamente.
                                         </p>
                                     </div>
@@ -266,9 +271,9 @@
                                     <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                                         <i class="bi bi-gem"></i>
                                         <h4>
-                                            <a href="#"> Bônus de outro mundo</a>
+                                            <a href="#" id="txt23"> Bônus de outro mundo</a>
                                         </h4>
-                                        <p>
+                                        <p id="txt24">
                                             Receba seu bônus em dinheiro, viagens, cruzeiros ou até mesmo um carro de luxo.
                                         </p>
                                     </div>
@@ -299,8 +304,8 @@
         <section id="testimonials" class="testimonials">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2> Depoimentos</h2>
-                    <h4> Estes são os depoimentos e os resultados de alguns empreendedores que mudaram suas vidas e de suas familias com o grupo HND.</h4>
+                    <h2 id="txt25"> Depoimentos</h2>
+                    <h4 id="txt26"> Estes são os depoimentos e os resultados de alguns empreendedores que mudaram suas vidas e de suas familias com o grupo HND.</h4>
                 </div>
 
                 <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
@@ -310,26 +315,26 @@
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
                                     <img src="assets/img/testimonials/depoimento5.jpg" class="testimonial-img" alt="">
-                                    <h3>Junior Staff</h3>
-                                    <h4>Triplo Diamante</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i> Comecei na Hinode como um plano B, uma segunda fonte de renda e em poucos meses ela já se tornou o plano A.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    <h3 id="txt27">Junior Staff</h3>
+                                    <h4 id="txt28">Triplo Diamante</h4>
+                                    <p id="txt29">
+                                        Comecei na Hinode como um plano B, uma segunda fonte de renda e em poucos meses ela já se tornou o plano A.
+
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <!-- End testimonial item -->
 
+
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
                                     <img src="assets/img/testimonials/depoimento4.png" class="testimonial-img" alt="">
-                                    <h3> Renato Nassuti</h3>
-                                    <h4>Ouro</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i> No início da Pandemia, me apresentaram essa empresa incrível e vi uma oportunidade de ter uma renda extra e hoje e a minha principal.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    <h3 id="txt30"> Renato Nassuti</h3>
+                                    <h4 id="txt31">Ouro</h4>
+                                    <p id="txt32">
+                                        No início da Pandemia, me apresentaram essa empresa incrível e vi uma oportunidade de ter uma renda extra e hoje e a minha principal.
                                     </p>
                                 </div>
                             </div>
@@ -340,26 +345,10 @@
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
                                     <img src="assets/img/testimonials/depoimento3.png" class="testimonial-img" alt="">
-                                    <h3>Arthur Carvalho</h3>
-                                    <h4>Diamante Elite</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i> Desde que inicie com o projeto da Hinode consegui multiplicar meu sálario x10.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/depoimento2.png" class="testimonial-img" alt="">
-                                    <h3> Camila Bichler</h3>
-                                    <h4>Safira</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>Ser influencer digital e ter uma parceria com a Hinode é incrível.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    <h3 id="txt33">Arthur Carvalho</h3>
+                                    <h4 id="txt34">Diamante Elite</h4>
+                                    <p id="txt35">
+                                        Desde que inicie com o projeto da Hinode consegui multiplicar meu sálario x10.
                                     </p>
                                 </div>
                             </div>
@@ -377,7 +366,7 @@
             <div class="container mt-5" data-aos="fade-up">
 
                 <div class="section-title mt-5">
-                    <h2>+ Razões para acreditar</h2>
+                    <h2 id="txt39">+ Razões para acreditar</h2>
 
                 </div>
 
@@ -435,7 +424,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Nossos Líderes</h2>
+                    <h2 id="txt40">Nossos Líderes</h2>
 
                 </div>
 
@@ -447,8 +436,8 @@
                                 <img src="assets/img/team/time1.png" class="img-fluid" alt="">
                             </div>
                             <div class="member-info">
-                                <h4> Vanderlei Sales</h4>
-                                <span> Triplo Diamante </span>
+                                <h4 id="txt41"> Vanderlei Sales</h4>
+                                <span id="txt42"> Triplo Diamante </span>
                             </div>
                         </div>
                     </div>
@@ -459,8 +448,8 @@
                                 <img src="assets/img/team/time2.png" class="img-fluid" alt="">
                             </div>
                             <div class="member-info">
-                                <h4> Arthur </h4>
-                                <span>Diamante Elite</span>
+                                <h4 id="txt43"> Arthur </h4>
+                                <span id="txt44">Diamante Elite</span>
                             </div>
                         </div>
                     </div>
@@ -471,8 +460,8 @@
                                 <img src="assets/img/team/time3.png" class="img-fluid" alt="">
                             </div>
                             <div class="member-info">
-                                <h4> Camila Bichler</h4>
-                                <span>Safira</span>
+                                <h4 id="txt45"> Camila Bichler</h4>
+                                <span id="txt46">Safira</span>
                             </div>
                         </div>
                     </div>
@@ -483,8 +472,8 @@
                                 <img src="assets/img/team/time4.png" class="img-fluid" alt="">
                             </div>
                             <div class="member-info">
-                                <h4> Junior Staff </h4>
-                                <span>Triplo Diamante </span>
+                                <h4 id="txt47"> Junior Staff </h4>
+                                <span id="txt48">Triplo Diamante </span>
                             </div>
                         </div>
                     </div>
@@ -501,32 +490,32 @@
 
 
                 <div class="section-title">
-                    <h2> Como vai funcionar </h2>
+                    <h2 id="txt49"> Como vai funcionar </h2>
                 </div>
 
                 <ul class="nav nav-tabs row d-flex">
                     <li class="nav-item col-3">
                         <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
                             <i class="ri-customer-service-2-fill"></i>
-                            <h4 class="d-none d-lg-block"> Suporte </h4>
+                            <h4 class="d-none d-lg-block" id="txt50"> Suporte </h4>
                         </a>
                     </li>
                     <li class="nav-item col-3">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
                             <i class="ri-body-scan-line"></i>
-                            <h4 class="d-none d-lg-block"> Colaboração da rede </h4>
+                            <h4 id="txt51" class="d-none d-lg-block" > Colaboração da rede </h4>
                         </a>
                     </li>
                     <li class="nav-item col-3">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
                             <i class="ri-sun-line"></i>
-                            <h4 class="d-none d-lg-block"> Empreender </h4>
+                            <h4 class="d-none d-lg-block" id="txt52"> Empreender </h4>
                         </a>
                     </li>
                     <li class="nav-item col-3">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
                             <i class="ri-store-line"></i>
-                            <h4 class="d-none d-lg-block"> Networking</h4>
+                            <h4 class="d-none d-lg-block" id="txt53"> Networking</h4>
                         </a>
                     </li>
                 </ul>
@@ -535,14 +524,14 @@
                     <div class="tab-pane active show" id="tab-1">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                                <h2 class="mt-5"> Apoio focado no dia dia</h2>
-                                <h4 class="fst-italic">
+                                <h2 class="mt-5" id="txt54"> Apoio focado no dia dia</h2>
+                                <h4 class="fst-italic" id="txt55">
                                     Do planejamento a máquina de vendas.
                                 </h4>
                                 <ul class="mt-5">
-                                    <li><i class="ri-check-double-line"></i> Lives semanais no zoom.</li>
-                                    <li><i class="ri-check-double-line"></i> Reunião para acompanhamento de carreira.</li>
-                                    <li><i class="ri-check-double-line"></i> Painéis de empreendedorismo.</li>
+                                    <li id="txt56"><i class="ri-check-double-line"></i> Lives semanais no zoom.</li>
+                                    <li id="txt57"><i class="ri-check-double-line"></i> Reunião para acompanhamento de carreira.</li>
+                                    <li id="txt58"><i class="ri-check-double-line"></i> Painéis de empreendedorismo.</li>
                                 </ul>
 
                             </div>
@@ -554,14 +543,14 @@
                     <div class="tab-pane" id="tab-2">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                                <h2 class="mt-5"> Aprenda a gerenciar </h2>
-                                <h4 class="fst-italic">
+                                <h2 class="mt-5" id="txt59"> Aprenda a gerenciar </h2>
+                                <h4 id="txt60" class="fst-italic">
                                     Crescimento orgânico de sua rede.
                                 </h4>
                                 <ul class="mt-5">
-                                    <li><i class="ri-check-double-line"></i> Novos empreendedores.</li>
-                                    <li><i class="ri-check-double-line"></i> Ajude a trasnformar pessoas em líderes.</li>
-                                    <li><i class="ri-check-double-line"></i> Bônus pelo gerenciamento de sua rede.</li>
+                                    <li id="txt61"><i class="ri-check-double-line"></i> Novos empreendedores.</li>
+                                    <li id="txt62"><i class="ri-check-double-line"></i> Ajude a trasnformar pessoas em líderes.</li>
+                                    <li id="txt63"><i class="ri-check-double-line"></i> Bônus pelo gerenciamento de sua rede.</li>
                                 </ul>
 
                             </div>
@@ -573,14 +562,14 @@
                     <div class="tab-pane" id="tab-3">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                                <h2 class="mt-5"> Apoio total aos novos empreendedores</h2>
-                                <h4 class="fst-italic">
+                                <h2 class="mt-5" id="txt64"> Apoio total aos novos empreendedores</h2>
+                                <h4 id="txt65" class="fst-italic">
                                     Transfome sua vida e de sua familia.
                                 </h4>
                                 <ul class="mt-5">
-                                    <li><i class="ri-check-double-line"></i> Seus resultados seus propósito</li>
-                                    <li><i class="ri-check-double-line"></i> Sua vida transformada.</li>
-                                    <li><i class="ri-check-double-line"></i> A arte do empreendedorismo.</li>
+                                    <li id="txt66"><i class="ri-check-double-line"></i> Seus resultados seus propósito</li>
+                                    <li id="txt67"><i class="ri-check-double-line"></i> Sua vida transformada.</li>
+                                    <li id="txt68"><i class="ri-check-double-line"></i> A arte do empreendedorismo.</li>
                                 </ul>
 
                             </div>
@@ -592,14 +581,14 @@
                     <div class="tab-pane" id="tab-4">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                                <h2 class="mt-5"> Networking com diversos empreendedores</h2>
-                                <h4 class="fst-italic">
+                                <h2 class="mt-5" id="txt69"> Networking com diversos empreendedores</h2>
+                                <h4 class="fst-italic" id="txt70">
                                     Cresça sua rede de pessoas influentes.
                                 </h4>
                                 <ul class="mt-5">
-                                    <li><i class="ri-check-double-line"></i> Conheça novos empreendedores.</li>
-                                    <li><i class="ri-check-double-line"></i> Novas formas de ganhar dinheiro</li>
-                                    <li><i class="ri-check-double-line"></i> Aprendizados para toda sua vida.</li>
+                                    <li id="txt71"><i class="ri-check-double-line"></i> Conheça novos empreendedores.</li>
+                                    <li id="txt72"><i class="ri-check-double-line"></i> Novas formas de ganhar dinheiro</li>
+                                    <li id="txt73"><i class="ri-check-double-line"></i> Aprendizados para toda sua vida.</li>
                                 </ul>
 
                             </div>
@@ -621,8 +610,8 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Modelos de negócio</h2>
-                    <h4>
+                    <h2 id="txt74">Modelos de negócio</h2>
+                    <h4 id="txt75">
                         Voce escolhe o melhor plano para você e nós te damos o caminho de como evoluir.
                     </h4>
                 </div>
@@ -632,51 +621,51 @@
 
                     <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
                         <div class="box" data-aos="fade-up" data-aos-delay="300">
-                            <h3>Combo Executivo Plus</h3>
+                            <h3 id="txt76">Combo Executivo Plus</h3>
                             3x<h4><sup>$</sup>333<span> .00</span></h4>
                             <ul>
-                                <li>Receba <span> R$ 1428.57</span> em produtos</li>
-                                <li>Kit de negócios</li>
-                                <li>Margem de lucros de 43%</li>
-                                <li>Bônus binário: 200 pontos</li>
+                                <li id="txt77">Receba <span> R$ 1428.57</span> em produtos</li>
+                                <li id="txt78">Kit de negócios</li>
+                                <li id="txt79">Margem de lucros de 43%</li>
+                                <li id="txt80">Bônus binário: 200 pontos</li>
                                 
                             </ul>
                             <div class="btn-wrap">
-                                <a target="_blank" href="https://vo10.hinode.com.br/cadastro/45820360" class="btn-buy"> Quero esse </a>
+                                <a target="_blank" href="https://vo10.hinode.com.br/cadastro/45820360" class="btn-buy" id="txt81"> Quero esse </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
                         <div class="box featured" data-aos="fade-up" data-aos-delay="200">
-                            <h3>Combo Executivo</h3>
+                            <h3 id="txt82">Combo Executivo</h3>
                             2x<h4><sup>$</sup>199<span> .95</span></h4>
                             <ul>
-                                <li>Receba <span> R$ 499.00</span> em produtos</li>
-                                <li>Kit de negócios</li>
-                                <li>Margem de lucros de 25%</li>
-                                <li>Bônus binário: 100 pontos</li>
+                                <li id="txt83">Receba <span> R$ 499.00</span> em produtos</li>
+                                <li id="txt84">Kit de negócios</li>
+                                <li id="txt85">Margem de lucros de 25%</li>
+                                <li id="txt86">Bônus binário: 100 pontos</li>
                                 
                             </ul>
                             <div class="btn-wrap">
-                                <a target="_blank" href="https://vo10.hinode.com.br/cadastro/45820360" class="btn-buy"> Quero esse </a>
+                                <a target="_blank" href="https://vo10.hinode.com.br/cadastro/45820360" class="btn-buy" id="txt87"> Quero esse </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
                         <div class="box" data-aos="fade-up" data-aos-delay="300">
-                            <h3>Combo Executivo Top</h3>
+                            <h3 id="txt88">Combo Executivo Top</h3>
                             5x<h4><sup>$</sup>439<span> .80</span></h4>
                             <ul>
-                                <li>Receba <span> R$ 3650.00</span> em produtos</li>
-                                <li>Kit de negócios</li>
-                                <li>Margem de lucros de 66%</li>
-                                <li>Bônus binário: 700 pontos</li>
+                                <li id="txt89">Receba <span> R$ 3650.00</span> em produtos</li>
+                                <li id="txt90">Kit de negócios</li>
+                                <li id="txt91">Margem de lucros de 66%</li>
+                                <li id="txt92">Bônus binário: 700 pontos</li>
                                 
                             </ul>
                             <div class="btn-wrap">
-                                <a target="_blank" href="https://vo10.hinode.com.br/cadastro/45820360" class="btn-buy"> Quero esse </a>
+                                <a target="_blank" href="https://vo10.hinode.com.br/cadastro/45820360" class="btn-buy" id="txt93"> Quero esse </a>
                             </div>
                         </div>
                     </div>
@@ -692,59 +681,59 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2> Perguntas frequentes</h2>
+                    <h2 id="txt94"> Perguntas frequentes</h2>
                 </div>
 
                 <ul class="faq-list accordion" data-aos="fade-up">
 
                     <li>
-                        <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">
+                        <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1" id="txt95">
                             Existe um plano ideal para fazer parte desse negócio? 
                             <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
                         <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                            <p>
+                            <p id="txt96">
                                 Nós recomendamos que você inicie com o plano de negócios x. Pois com ele você conseguirá um primeiro retorno em até 03 meses.
                             </p>
                         </div>
                     </li>
 
                     <li>
-                        <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">
+                        <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed" id="txt97">
                             O marketing multinível é pirâmide? 
                             <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
                         <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                            <p>
+                            <p id="txt98">
                                 Definitivamente não e eu vou te dar alguns argumentos para te provar.
                             </p>
-                            <p>
+                            <p id="txt99">
                                 1º No marketing multinível as pessoas só conseguem crescer com o bom gerenciamento de sua rede, ou seja, o bom e velho ganha-ganha.
                             </p>
-                            <p>
+                            <p id="txt100">
                                 2º No grupo HND você pode optar em escolher participar ou não do marketing multinível.
                             </p>
-                            <p>
+                            <p id="txt101">
                                 3º Todos os líderes de rede do grupo HND possuem plano de negócios e carreira para sua rede.
                             </p>
                         </div>
                     </li>
 
                     <li>
-                        <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">
+                        <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed" id="txt102">
                             Só vou poder vender os produtos físicamente? 
                             <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
                         <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-                            <p>
+                            <p id="txt103">
                                 Como te falamos o mundo mudou e o grupo HND acompanhou essa evolução, tendo uma estrutura digital para vender seus produtos em modelo de e-commerce.
                             </p>
                         </div>
                     </li>
 
                     <li>
-                        <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">
+                        <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed" id="txt104">
                             Qual o risco dessa operação? 
                             <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
                         <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-                            <p>
+                            <p id="txt105">
                                 O risco fica por nossa conta. Ao adquirir o plano de negócios você terá os produtos do grupo HND com 50% de margem para revender e ou consumir.
                             </p>
                         </div>
@@ -762,7 +751,7 @@
                     <div class="container" data-aos="fade-up">
         
                         <div class="section-title">
-                            <h2> seu modelo de negócio com a total segurança</h2>
+                            <h2 id="txt106"> seu modelo de negócio com a total segurança</h2>
                         </div>
   
                         <div class="container">
@@ -796,8 +785,8 @@
                 <div class="row">
 
                     <div class="section-title">
-                        <h2>Quero fazer parte agora mesmo</h2>
-                        <a target="_blank" href="https://vo10.hinode.com.br/cadastro/45820360" class="get-started-btn scrollto">Seja o protagonista da sua história <i class="bx bx-chevron-right"></i></a>
+                        <h2 id="txt107">Quero fazer parte agora mesmo</h2>
+                        <a target="_blank" href="https://vo10.hinode.com.br/cadastro/45820360" class="get-started-btn scrollto" id="txt108">Seja o protagonista da sua história <i class="bx bx-chevron-right"></i></a>
 
                     </div>
 
@@ -833,10 +822,9 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+
+
 </body>
 
-</html>
-
-</html>
 
 </html>
